@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Alignment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&family=Rubik:ital,wght@0,400;0,500;1,400&family=Tilt+Prism&display=swap" rel="stylesheet">
+    <style>
+        . {
+          box-sizing: border-box;
+        }
+        body{
+            font-family: 'Raleway', sans-serif;
+        }
+        .container{
+            width: 900px;
+            border: 3px solid purple;
+            margin: auto auto;
+        }
+        .item{
+            border: 3px solid rgb(156, 179, 155);
+            margin: 12px auto;
+            padding: 12px auto;
+            background-color: rgb(209, 186, 186);
+        }
+        #fruit{
+           float: left;
+           width: 100%;  
+        }
+        #computer{
+            float: right;
+            width: 48%;   
+        }
+        #stationary{
+            /*float: left;*/
+            clear: both;
+            clip-path: none;
+            width: 48%; 
+        }
+        p,h3{
+         text-align: right;
+         text-align: left;
+         text-align: center;
+         text-align: justify;
+        }
+        h1{
+            margin: auto;
+            width: 455px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>welcome to my store</h1>
+        <div id="fruit" class="item">
+            <h3>fruit</h3>
+            <p id="fruitpara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, dicta. Illum, eaque. Vero, mollitia ut hic debitis cum explicabo nostrum sunt, consequuntur incidunt, voluptate quibusdam. Quod asperiores nesciunt dolore praesentium? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis aspernatur alias incidunt a quibusdam. </p>
+        <div id="computer" class="item">
+            <h3>computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, dicta. Illum, eaque. Vero, mollitia ut hic debitis cum explicabo nostrum sunt, consequuntur incidunt, voluptate quibusdam. Quod asperiores nesciunt dolore praesentium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aperiam id enim ratione eligendi. </p>
+        <div id="stationary" class="item">
+            <h3>stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, dicta. Illum, eaque. Vero, mollitia ut hic debitis cum explicabo nostrum sunt, consequuntur incidunt, voluptate quibusdam. Quod asperiores nesciunt dolore praesentium?</p>
+        </div>
+    </div>
+</body>
+</html>

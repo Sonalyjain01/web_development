@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sona Fitness</title>
+</head>
+
+<link rel="stylesheet" href="css/style.css">
+<Style>
+    body{
+        /*css reset*/
+        font-family: cursive;
+        color: white;
+        margin:auto;
+        padding:auto;
+        background: url('https://media.istockphoto.com/id/1369524108/photo/shot-of-a-sled-push-in-an-empty-gym.jpg?s=612x612&w=0&k=20&c=f74jGDoReyXXzTxblRQlQwY1RAUwo1KqAAJbHRgEcPA=')
+
+    }
+    .left{
+        display: inline-block;
+    
+        position: absolute;
+        left: 60px;
+        top: 20px;
+        
+    }
+    .left img{
+        width: 100px;
+        /*filter: invert(100%);*/
+         image-rendering: center;
+    }
+    .left div{
+        line-height: 19px;
+        font-size: 23px;
+        text-align: center;
+    }
+    
+    .mid{
+        display: block;
+        width:45%;
+        margin: 25px auto;
+        
+        
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        
+    }
+    .navbar{
+      display: inline-block;
+    }
+    .navbar li{
+      display: inline-block;
+      font-size: 25px;
+    }
+    .navbar li a{
+        color: white;
+        padding: 34px 23px;
+        text-decoration: none;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: rgb(235, 183, 190);
+    }
+    .btn{
+        font-family: cursive;
+        padding:7px 9px ;
+        margin:12px 9px ;
+        background-color:rgb(10, 9, 9);
+        color: white;
+        border: 2px solid rgb(247, 239, 239);
+        border-radius: 8px;
+        font-size: 20px;
+        cursor: pointer;
+        
+    }
+    .btn:hover{
+        background-color: rgb(202, 87, 87);
+    }
+    .container{
+        margin: 180px 40px;
+        padding: 40px;
+        width: 30%;
+        border: 2px solid white;
+        border-radius: 12px;
+        height: 40%;
+    }
+    .form-group input{
+        font-family: cursive;
+        height: 12px;
+        width: 355px;
+        padding: 10px 13px;
+        margin: 5px auto;
+        border-radius: 8px;
+        text-align: center;
+        display: block;
+        border: 2px solid rgb(17, 17, 17);
+        font-size: 20px;
+        
+    }
+    .container h1{
+        text-align: center;
+        margin:auto;
+    }
+    .container button{
+        margin:12px auto;
+        width: 73%;
+        display: block;
+    }
+    
+    
+</Style>
+<body>
+    <header class="header">
+        <!--left box for logo-->
+        <div class="left">
+            <img src="https://media.istockphoto.com/id/1499216003/photo/gym-neon-banner-on-brick-wall-background.jpg?s=612x612&w=0&k=20&c=aUpwMlgEt3G0hPXlmOI8N_-50Ydx2s7ANEsStY1-FtA=" alt="">
+          <div>Sona Fitness</div>
+        </div>
+        <!--mid box for navbar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">contact us</a></li>
+              </ul>
+        </div>
+        <!--right box for buttons -->
+        <div class="right">
+         <button class="btn ">Search Here</button><button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container"> 
+        <h1 style="color: palevioletred;">Join the best gym of Delhi</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your contact no.">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Locality">
+            </div>
+            <button class="btn">Submit</button>
+            <button class="btn">Cancel</button>
+        </form>
+    </div>
+</body>
+</html>

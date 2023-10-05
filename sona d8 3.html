@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+       .{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: rgb(231, 160, 231);
+        }
+        .container{
+            background-color: rgb(173, 166, 235);
+            border: 2px solid rgb(118, 17, 138);
+            /* we can set margin/padding Top, Bottom, Right and left like this */
+            /* padding-top: 50px;
+            padding-bottom: 50px ;
+            padding-left: 40px ;
+            padding-right: 40px; */
+           /* margin-top: 15px;
+            margin-bottom: 20px;
+            margin-left: 14px;
+            margin-right: 15px; */
+           /* we can set margin/padding for all side */
+           /* padding: 50px;
+            margin: 34px; */
+            /* padding= Top, Right, Bottom, Left */
+            /* padding: 23px 56px 6px 78px; */
+            /* margin= Top, Right, Bottom, Left */
+           /* margin: 25px 50px 8px 70px; */
+            /* padding: y(top/bottom) x(right/left); */
+            padding: 58px 38px;
+            /* margin: y(top/bottom) x(right/left); */
+            margin: 15px 30px; 
+            border-radius: 5px;
+            width: 200px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my first heading</h3>
+        <p id="firstpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus hic iste natus cupiditate voluptas debitis libero, nulla ratione excepturi corrupti magnam deserunt sit obcaecati?</p>
+    </div>
+    <div class="container">
+        <h3>This is my second heading</h3>
+        <p id="secondpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus hic iste natus cupiditate voluptas debitis libero, nulla ratione excepturi corrupti magnam deserunt sit obcaecati?</p>
+    </div>
+    <div class="container">
+        <h3>This is my third heading</h3>
+        <p id="thirdpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus hic iste natus cupiditate voluptas debitis libero, nulla ratione excepturi corrupti magnam deserunt sit obcaecati?</p>
+    </div>
+</body>
+</html>

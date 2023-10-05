@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+    <style>
+        .container{
+            border: 2px solid darkorchid;
+            background-color: rgb(242, 245, 248);
+            height: 3344px;
+        }
+        /*Css position:static(default),absolute,relative,fixed,sticky*/
+        .box{
+            display: inline-block;
+            width: 160px ;
+            height:160px ;
+            border: 2px solid darkolivegreen;
+            margin: 2px;
+        }
+        #box3{
+        /*relative:means it will move relative to its normal position and when you need gap in previous position*/
+       /* position: relative;*/
+       /*absolute:means it will relative to the position of its first parent*/
+       /*position:absolute;*/
+       /*static:means normal position*/
+       /*position: static;
+           left: 34px;
+            top: 34px;*/
+            /*this uses to make chats and fixed position means it will fixed to the normal position at one place*/
+           /*fixed:position  element relative to the browser window*/
+            /*position: fixed;*/
+            /*right: 4px;
+            bottom: 2px;*/
+            /*sticky:*/
+            position: sticky;
+            top: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">chat with us</div>
+    <div class="box" id="box4">4</div>
+</div>
+</body>
+</html>
