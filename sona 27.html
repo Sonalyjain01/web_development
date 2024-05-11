@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid + Media Queries</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 2rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside';
+        }
+        @media only screen and (max-width:300px) {
+            body{
+                background-color: red;
+            }
+            span{
+            display: block;
+            text-align: center;
+        }
+            
+        }
+        @media only screen and (min-width:300px) and (max-width:500px) {
+            body{
+                background-color: blue;
+            }
+            .container{
+            display: grid;
+            grid-gap: 2rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'footer footer footer footer';
+            }
+            aside{
+                display: none;
+            }
+            span{
+            display: block;
+            text-align: center;
+        }
+
+            
+        }
+        @media (min-width:500px) and (max-width:800px) {
+            body{
+                background-color: yellow;
+            }
+            .container{
+            grid-gap: 2rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer';
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+        }
+        @media (min-width:800px) {
+            body{
+                background-color: green;
+            }
+            
+        }
+        .bdr{
+            border: 2px solid black;
+            background-color: lightsalmon;
+            padding: 10px 25px;
+        }
+        nav{
+            grid-area: navbar;
+            
+        }
+        section{
+            grid-area: section;
+        }
+        aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>About</span>
+            <span>Services</span>
+            <span>Contact us</span>
+        </nav>
+        <section class="bdr">
+            <h2> Learn CSS Code with harry</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae possimus quas eos quaerat fuga. Enim vitae eius amet? Omnis nihil delectus facilis dolor mollitia ipsa sunt in obcaecati et eveniet sit dolorum sed corrupti at soluta exercitationem perferendis veritatis, dolorem inventore hic. Quaerat ratione illum sunt, sequi officiis et, autem non qui nam porro odit aperiam quidem expedita quod voluptates doloremque, quasi vel? Accusantium possimus numquam cupiditate! Quos culpa unde rerum dignissimos quae modi veritatis libero iusto perferendis eaque, iste a iure accusantium fugiat voluptatum repudiandae temporibus! Quisquam blanditiis officia officiis harum fuga eius, inventore vel sit, dolorem quae necessitatibus minus adipisci magnam repellendus nesciunt iste laborum. Ex rerum accusamus blanditiis quam quos. Voluptate eius id quidem ducimus reiciendis. Pariatur vitae sequi quis placeat ipsa reiciendis, perferendis consequuntur eaque quibusdam corrupti quaerat, corporis facere animi. Deserunt eius vitae maiores voluptas veritatis consequatur laudantium accusantium voluptatum incidunt pariatur iusto laboriosam, omnis placeat! Architecto, ea cumque! Nostrum minus dolor, labore quis quos illo natus veritatis corporis, distinctio fugiat iste? Veniam similique doloremque quia labore? Repudiandae porro numquam dolorem veniam neque. Exercitationem autem nobis optio aut! Itaque culpa esse quisquam et omnis nemo officiis corrupti delectus, fuga illum atque excepturi eos. Saepe, iusto.</p>
+        </section>
+        <aside class="bdr">
+            <h1>More about us</h1>
+        </aside>
+        <footer class="bdr"> Contact with Sonaly jain for any query </footer>
+    </div>
+</body>
+</html>

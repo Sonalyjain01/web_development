@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrows in JS</title>
+</head>
+<body>
+    <div class="container">
+        This is your website or not. are u satify this website or not.
+    </div>
+    <script>
+        console.log("This is your website");
+
+        // Arrow function
+        /*
+        let greet =() =>{
+            console.log("Good Morning");
+        }
+        greet()
+        */
+        /*
+        // sum of two numbers
+        let sum=(a,b) =>{
+            return (a+b);
+        }
+        // sum(25,30)
+        */
+       //shortcut method of arrow function
+       //let greet=() => "Good Morning sona";
+       //let sum2=(a,b) =>a+b;
+
+       //let half=a =>a/2;
+/*
+// normal function calling
+        function greet(){
+            console.log("Good Morning ");
+        }
+        greet()
+        
+        // set time for particular massage
+        setTimeout(() => {
+            console.log("We are inside the timeOut");
+        },3000)
+        */
+       obj1={
+        greeting:"Good Morning",
+        names:["sonaly","amitesh","parth","aditya"],
+        speak(){
+            // when we use arrow function then this function is used from parent function
+            // this line find this function inside this line as well as outside the function
+            this.names.forEach((student) =>{
+                // when we do not use arrow function then it call  this function inside itself 
+                // this line only find inner this function and give default value as a undefined function
+            //this.names.forEach(function s(student){
+                console.log(this.greeting +" "+ "how are you" +" "+ student);
+            });
+        }
+       }
+       obj1.speak();
+    </script>
+</body>
+</html>

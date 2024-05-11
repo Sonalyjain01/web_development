@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object in JS</title>
+</head>
+<body>
+    <div class="container">
+        This is math object of JS
+    </div>
+    <script>
+        // Printing the math object
+        let m=Math;
+        console.log(m);
+        
+        // Printing the constants from math object
+        console.log("The value of Math.E is",Math.E);
+        console.log("The value of Math.PI is",Math.PI);
+        console.log("The value of Math.LN2 is",Math.LN2);
+        console.log("The value of Math.LOG2E is",Math.LOG2E);
+        console.log("The value of Math.SQRT1_2 is",Math.SQRT1_2);
+        console.log("The value of Math.SQRT2 is",Math.SQRT2);
+
+        // Printing the function from math object
+        let a=34.6472295;
+        let b=64;
+        console.log("The value of 'a' and 'b' is",a,b);
+        // Math.round function: It is used for rotated the given numbers
+        console.log("The value of 'a' and 'b' round is",Math.round(a),Math.round(b));
+
+        // Math.pow function: It is used for find square of the given number
+        console.log("9 raised to the power of 2 is ",Math.pow(9,2));
+        console.log("3 raised to the power of 15 is ",Math.pow(3,15));
+        console.log("6 raised to the power of 6 is ",Math.pow(6,6));
+
+        // Math.sqrt function: It is used for find square root of given number
+        console.log("Square root of 57 is",Math.sqrt(57));
+        console.log("Square root of 27 is",Math.sqrt(27));
+        console.log("Square root of 245 is",Math.sqrt(245));
+
+        // Ceil and Floor function from the math object
+        // Math.ceil function: It is used to give next accurate value from given decimal value
+        // Math.floor function: It is used to give last accurate value from given decimal value
+        console.log("25.6779 rounded up to nearest integer is",Math.ceil(25.6779));
+        console.log("25.6779 rounded down to nearest integer is",Math.floor(25.6779));
+
+        // Absolute function from the math object
+        // Math.abs function: It is used to give always Positive value/Absolute value
+        console.log("Absolute value of 7.89 is",Math.abs(7.89));
+        console.log("Absolute value of -7.89 is",Math.abs(-7.89));
+
+        // Trignomatric Function from the math object
+        // It is used to give value of sin ,cos, and tan in term of mathmatics numbers
+        console.log("The value of sin(pi) is",Math.sin(Math.PI));
+        console.log("The value of sin(pi/2) is",Math.sin(Math.PI/2));
+        console.log("The value of tan(pi) is",Math.tan(Math.PI));
+        console.log("The value of tan(pi/2) is",Math.tan(Math.PI/2));
+        console.log("The value of cos(pi/2) is",Math.cos(Math.PI/2));
+        console.log("The value of cos(pi) is",Math.cos(Math.PI));
+
+        // Minimum and Maximum value from the math object
+        // Math.min function : It is used to find minimum value of given numbers
+        // Math.max function : It is used to find maximum value of given numbers
+        console.log("The minimum value is", Math.min(12,4,35));
+        console.log("The maximum value is", Math.max(12,4,35));
+
+        // Generating random numbers
+        // Math.random function: It is used to give random numbers from particular given range
+        let r= Math.random();
+        console.log("Random Value is",r);
+        // Random number b/w (a,b)= a + (b-a)*Math.random
+        // This line give random number b/w 1 to 100 
+        let a1=1;
+        let b1=100;
+        let r1_100= a + (b-a)*Math.random();
+        console.log("Random value is",r1_100);
+        // This line give random number b/w 50 to 600
+        let a2=50;
+        let b2=600;
+        let r50_600= a + (b-a)*Math.random();
+        console.log("Random value is",r50_600);
+
+
+
+
+
+    </script>
+</body>
+</html>

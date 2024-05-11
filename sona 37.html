@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating DOM</title>
+</head>
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>Menu</li>
+            <li>Services</li>
+            <li>Contact US</li>
+            <li>More About US</li>
+        </ul>
+    </div>
+    <div class="container">
+        another container
+    </div>
+    <script>
+        // this is used for manipulating main id of div in script
+        // Navigating the DOM
+        let main=document.getElementById('main');
+        console.log(main);
+        // get nav id 
+        let nav=document.getElementById('nav');
+        console.log(nav);
+        // get class container
+        let container=document.getElementsByClassName('container');
+        console.log(container);
+        // return css selectors
+        //let sel =document.querySelector('.container');
+        //let sel =document.querySelector('#nav');
+        //let sel =document.querySelector('#nav>li');
+        let sel =document.querySelectorAll('.container');
+        console.log("Selectors return",sel)
+    </script>
+</body>
+</html>

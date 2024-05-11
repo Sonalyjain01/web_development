@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON in Java Script</title>
+</head>
+<body>
+    <div class="container">
+        This is my container box. Do you have any problem?
+    </div>
+    <script>
+        // create a simple object
+        let jsonObj={
+            name:"sonaly",
+            address:"Agra",
+            friend:"Amiiiiiii",
+            food:"south_indian"
+        }
+
+
+        jsonObj.newThing = "newThing"
+        console.log(jsonObj);
+        // JSON.stringify function: It is used to change object to string type
+        let myjsonStr=JSON.stringify(jsonObj);
+        console.log(myjsonStr);
+        // replace function: It is used to replace the one value to another value from json object
+         myjsonStr= myjsonStr.replace("sonaly","sona");
+         console.log(myjsonStr);
+        // JSON.parse function: It is used to again convert string type to object type
+         newJsonObj=JSON.parse(myjsonStr);
+         console.log(newJsonObj);
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            text-align: center;
+            background-color: pink;
+            font-size: 70px;
+            color: blue;
+            display: none;
+            
+        }
+        @media (max-width:300px) {
+            #box-1{
+                display: block;
+                background-color: cyan;
+            }
+        }
+        @media (max-width:500px) and (min-width:300px) {
+            #box-2{
+                display: block;
+                background-color:rgb(238, 230, 245);
+            }
+        }
+        @media (max-width:600px) and (min-width:500px) {
+            #box-3{
+                display: block;
+                background-color:rgb(179, 218, 40);
+            }
+        }
+        @media  (min-width:600px) {
+            #box-4{
+                display: block;
+                background-color:rgb(63, 196, 236);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1">this is the first box </div>
+    <div class="box" id="box-2">this is the second box </div>
+    <div class="box" id="box-3">this is the third box </div>
+    <div class="box" id="box-4">this is the forth box </div>
+</body>
+</html>

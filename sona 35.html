@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction using alert, confirm, prompt</title>
+
+</head>
+<body>
+    <div class="container">
+        <div class="box">This is your box</div>
+        <div class="box">This is your box</div>
+        <div class="box">This is your box</div>
+        <div class="box">This is your box</div>
+        <div class="box">This is your box</div>
+        <div class="box">This is your box</div>
+    </div>
+    <script>
+        // Alert in in-browser JavaScript :- give an alert masssage to the user.
+        //alert("This is a massage");
+        //Does not return everything
+        //let a= alert("This is a massage");
+        //console.log(a);
+
+        //  Prompt in JS - prompt used when you ask any qustion to the user
+        //let name=prompt("what is your name?","");
+        //console.log(name);
+/*
+        //  Confirm in JS - confirm used when you delete something and give warning to the user
+        let deletePost= confirm("Do you really want to delete this post");
+        //console.log(deletePost);
+        // code to delete the post
+        if(deletePost){
+            console.log("Your post has been deleted successfully");
+        }
+        // code to cancel the deletion of the post
+        else{
+            console.log("Your post has not been deleted");
+        }
+        */
+       // check the user age 
+       /*
+        let age=prompt("what is your age?","")
+        if (age>18){
+            console.log("you are eligible for this job");
+        }
+        else{
+            console.log("you are not eligible");
+        }
+        */
+       // check the email-id of the user
+        let email=prompt("enter your email");
+        let checkEmail= confirm("please check your email");
+        if(checkEmail){
+            console.log("your email updated");
+        }
+        else{
+            console.log("wrong email");
+        }
+        
+
+    </script>
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid (create layouts)</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 2rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+
+        }
+        .item{
+            background-color: yellow;
+            border: 3px solid black;
+            border-radius: 12px;
+            padding: 25px 5px;
+            
+
+        }
+        #navbar{
+            grid-area: navbar;
+            
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            Home About Contact us
+        </div>
+        <div id="section" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus iste dolore maiores quasi nulla, accusamus placeat eos commodi enim, voluptatum fuga reiciendis dolores iusto velit, quis nisi a porro eaque? Amet aliquam voluptate similique cumque odit repellat consectetur accusamus dolor quam temporibus laborum nostrum quibusdam earum, numquam dolores officia ab facilis eius esse culpa sequi placeat ex. Vel sunt pariatur laboriosam facere? Eius voluptatum non, soluta neque ullam a. Laboriosam eveniet soluta saepe minus eos veritatis maxime quis ipsam distinctio molestiae aspernatur architecto, eius neque perspiciatis. Quia voluptatum expedita porro laboriosam blanditiis, eligendi assumenda maiores exercitationem hic, voluptatibus aliquid aspernatur.
+        </div>
+        <div id="aside" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aut commodi esse odio culpa dolor harum blanditiis perspiciatis facere, eligendi laborum quod, quibusdam quaerat maxime mollitia dolores ad eius molestias inventore cumque debitis. Totam expedita placeat eius facilis officia, eaque fuga sunt ad! Doloribus ipsum cum suscipit itaque amet quasi?
+
+        </div>
+        
+        <footer class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti alias quos ipsa.</footer>
+        
+        <!--
+        <div class="item">Item-1</div>
+        <div class="item">Item-2</div>
+        <div class="item">Item-3</div>
+        <div class="item">Item-4</div>
+        <div class="item">Item-5</div>
+        <div class="item">Item-6</div>
+        <div class="item">Item-7</div>
+        <div class="item">Item-8</div>
+        <div class="item">Item-9</div>
+        <div class="item">Item-10</div>
+        <div class="item">Item-11</div>
+        <div class="item">Item-12</div>
+        <div class="item">Item-13</div>
+        <div class="item">Item-14</div>
+        -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String function in JavaScript</title>
+
+
+</head>
+<body>
+    <div class="container">
+        <h1>Today we are learn about string method</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel molestiae cum ea. Possimus adipisci unde perspiciatis? Repellat mollitia, odio, maxime laborum magni dicta itaque earum voluptates ex omnis possimus, optio numquam ipsum molestiae? Sunt corrupti blanditiis ipsam dolor quis aperiam impedit, repellat autem laudantium natus, voluptatibus cupiditate aspernatur facere deserunt magnam iste neque eligendi sed iure recusandae, ratione similique vitae dicta obcaecati. Aspernatur eligendi quo hic dolor minima, aut quis voluptas amet quos, blanditiis excepturi illo quidem doloribus perspiciatis maiores.</p>
+    </div>
+    <script>
+        var str="This is a string";
+        console.log(str);
+        // First occurence of substring
+        var position=str.indexOf("a");
+        console.log(position);
+        // Last occurence of substring
+        position=str.lastIndexOf("is");
+        console.log(position);
+        // Substring from a string
+        // Slice- it take all negative or positive values
+        var substr=str.slice(1,7);
+        console.log(substr);
+        // Substring- It take only positive values
+        var substr1=str.substring(1,6);
+        console.log(substr1);
+        // Substr- It take length of string
+        var substr1=str.substr(1,5);
+        console.log(substr);
+        // It use to replace the string with another string
+        var replaced= str.replace("This", " Sona");
+        console.log(replaced);
+        // Uppercase- It use  only for capital string
+        console.log(str.toUpperCase());
+        // Lowercase- It use only for small string
+        console.log(str.toLowerCase());
+        // Concat- It is used to combine two string with together
+        var newString=str.concat(" This is your new string");
+        console.log(newString);
+        // Trim- It is used for remove extra space
+        var strWithWhiteSpaces="  This is my today     task    ";
+        console.log(strWithWhiteSpaces);
+        console.log(strWithWhiteSpaces.trim());
+        // charAt- It is used to give index value of given index number
+        var char2= str.charAt(3);
+        console.log(char2);
+        // charCodeAt- It is used to give index number of given index number
+        var char2= str.charCodeAt(4);
+        console.log(char2);
+        // It is used for direct finding of index value
+        console.log(str[5]);
+    </script>
+</body>
+</html>

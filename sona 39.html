@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval and setTimeOut</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is my JS series</h1>
+        Time now is <span id="time"></span>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate maiores nemo pariatur veniam minima! Voluptatem iusto culpa facere qui fugit consectetur aliquid ipsum accusantium ducimus distinctio quo magnam vitae dicta enim ex impedit corporis aperiam consequatur veniam id minus neque, incidunt laborum! Voluptatum incidunt quisquam quae ut cupiditate ipsum ipsam et amet, hic sed aperiam. Quam reiciendis eaque libero reprehenderit fuga voluptates harum cupiditate culpa ipsa iure dolores tenetur ab rem, vel quia. Aliquid deleniti culpa eum consequuntur quisquam quae sint, voluptate similique tenetur neque at cupiditate soluta, iusto sapiente eaque dolorum mollitia quis. Quisquam rem nam ipsam delectus cumque? Tempore eligendi qui hic ut provident incidunt totam ab ipsa aliquam, non, commodi illum voluptatibus accusamus. Voluptatem consequuntur in deleniti corporis ex voluptatibus neque magnam, debitis aperiam itaque maiores officiis reprehenderit labore recusandae quod repellendus error voluptas asperiores exercitationem quae? Dignissimos voluptatum non beatae aut laudantium. Commodi, dolor? Temporibus, eveniet.</p>
+    </div>
+    <script>
+        console.log("I love u so much");
+        // setTimeOut --> Allows us to run the function once after the interval of time
+        // clearTimeOut --> Allows us to run the function repeatedly after the interval of time
+
+        function greet(name,byetext){
+            console.log("Hello Good morning" +" "+ name +" "+ byetext);
+        }
+        /*
+        // It is used for to set time of the text
+        setTimeout(greet, 6000, "Sona", "take care");
+        setTimeout(greet(),2000); --> Wrong as it is calling the function inside the setTimeOut
+        timeOut=setTimeout(greet, 6000, "Sona", "take care");
+        console.log(timeOut);
+        // clearTimeOut used for stop timeOut of parameter massage
+        clearTimeout(timeOut);
+        // It is used for multiple repeatition of the parameter message
+        intervalId=setInterval(greet, 6000, "Sona", "How are you");
+        //console.log(intervalId);
+        // It is used for stop the interval time of the message
+        clearInterval(intervalId);
+*/
+        // create a time watch 
+        function displayTime(){
+            time=new Date();
+            console.log(time);
+            document.getElementById("time").innerHTML = time;
+        }
+        //setInterval(displayTime,1000);
+</script>
+</body>
+</html>
